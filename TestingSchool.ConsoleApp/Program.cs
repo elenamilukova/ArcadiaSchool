@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ArcadiaSchool.ConsoleApp
+namespace TestingSchool.ConsoleApp
 {
     class Program
     {
