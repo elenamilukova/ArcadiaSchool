@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using Btl.Surpass.AutomationTesting.Common;
+using Btl.Surpass.AutomationTesting.Models;
 
 namespace Btl.Surpass.AutomationTesting
 {
@@ -7,6 +9,14 @@ namespace Btl.Surpass.AutomationTesting
     {
         static void Main(string[] args)
         {
+            //var aa = new LocalizedText();
+            //aa.Language = Languages.English;
+            //aa.Text = "sfdsf";
+
+            //Console.WriteLine(aa.ToString());
+
+
+
             Console.OutputEncoding = System.Text.Encoding.UTF8; //use if rus lang or spec symb
 
             var dictionary = new Dictionary<string, IList<string>>(StringComparer.InvariantCultureIgnoreCase);
