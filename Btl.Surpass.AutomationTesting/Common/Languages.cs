@@ -1,4 +1,4 @@
-﻿namespace TestingSchool.Translator.Common
+﻿namespace Btl.Surpass.AutomationTesting.Common
 {
     //enumeration of languages
     enum Languages

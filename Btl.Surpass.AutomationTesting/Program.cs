@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq.Expressions;
-using TestingSchool.Translator.Common;
 
-namespace TestingSchool.Translator
+namespace Btl.Surpass.AutomationTesting
 {
     class Program
     {

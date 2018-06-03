@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("TestingSchool.Translator")]
+[assembly: AssemblyTitle("Btl.Surpass.AutomationTesting")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("TestingSchool.Translator")]
+[assembly: AssemblyProduct("Btl.Surpass.AutomationTesting")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("f59fcef4-b751-465f-b7a4-7c1a58c97da0")]
+[assembly: Guid("12401cfd-4a33-4168-9c73-8ff8a0eb4b1d")]
 
 // Version information for an assembly consists of the following four values:
 //
