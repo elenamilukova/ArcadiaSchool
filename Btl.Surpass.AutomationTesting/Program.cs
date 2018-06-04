@@ -9,11 +9,11 @@ namespace Btl.Surpass.AutomationTesting
     {
         static void Main(string[] args)
         {
-            //var aa = new LocalizedText();
-            //aa.Language = Languages.English;
-            //aa.Text = "sfdsf";
+            //создание экземпляра LocalizedText
+            LocalizedText instance = new LocalizedText(Languages.Russian, "привет");
 
-            //Console.WriteLine(aa.ToString());
+
+            Console.WriteLine(instance.ToString());
 
 
 

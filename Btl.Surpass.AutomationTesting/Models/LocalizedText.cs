@@ -3,14 +3,37 @@ using Btl.Surpass.AutomationTesting.Common;
 
 namespace Btl.Surpass.AutomationTesting.Models
 {
-    internal class LocalizedText
+    //class definition (определение класса)
+    internal class LocalizedText : Object //все классы наследуются от класса Object (указвать object не обязательно)
     {
+        //property definition 
         public Languages Language { get; set; }
         public string Text { get; set; }
 
-        //public override string ToString()
+        //constructor
+        public LocalizedText(Languages language, string text)
+        {
+            Language = language;
+            Text = text;
+        }
+
+        //method
+        //public string GetString()
         //{
-        //    return Language.ToString() + " " + Text;
+        //    string textValue = "myText";
+        //    return textValue;
         //}
+
+        //переопределение метода
+        public override string ToString()
+        {
+            return string.Format("Localized text: Language - {0}, Text - {1}", Language, Text);
+        }
     }
+
+    // пример наследования
+    //internal class LocalizedText2 : LocalizedText
+    //{
+    //    public int Age { get; set; }
+    //}
 }

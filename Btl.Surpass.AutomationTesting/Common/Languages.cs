@@ -3,8 +3,8 @@
     //enumeration of languages
     enum Languages
     { 
-        English = 0,
-        Russian = 1,
-        Turkish = 2
+        English = 1,
+        Russian = 2,
+        Turkish = 3
     } 
 }
