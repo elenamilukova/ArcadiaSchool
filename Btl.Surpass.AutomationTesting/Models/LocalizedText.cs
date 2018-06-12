@@ -7,11 +7,11 @@ namespace Btl.Surpass.AutomationTesting.Models
     internal class LocalizedText : Object //все классы наследуются от класса Object (указвать object не обязательно)
     {
         //property definition 
-        public Languages Language { get; set; }
+        public Language Language { get; set; }
         public string Text { get; set; }
-
-        //constructor
-        public LocalizedText(Languages language, string text)
+        
+        //constructor (create new instance)
+        public LocalizedText(Language language, string text)
         {
             Language = language;
             Text = text;
