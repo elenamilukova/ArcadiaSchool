@@ -1,7 +1,9 @@
 ﻿namespace Btl.Surpass.AutomationTesting.Common
 {
     //enumeration of languages
-    enum Language
+
+    //internal access modifier was added
+    internal enum Language
     { 
         English = 1,
         Russian = 2,

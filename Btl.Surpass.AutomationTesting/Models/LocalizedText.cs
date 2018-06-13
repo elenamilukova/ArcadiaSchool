@@ -1,28 +1,25 @@
-﻿using System;
-using Btl.Surpass.AutomationTesting.Common;
+﻿using Btl.Surpass.AutomationTesting.Common;
 
+//Reformat class, remove commented text , add phrase identifier
 namespace Btl.Surpass.AutomationTesting.Models
 {
     //class definition (определение класса)
-    internal class LocalizedText : Object //все классы наследуются от класса Object (указвать object не обязательно)
+    internal class LocalizedText : object //все классы наследуются от класса Object (указвать object не обязательно)
     {
-        //property definition 
-        public Language Language { get; set; }
-        public string Text { get; set; }
-        
         //constructor (create new instance)
-        public LocalizedText(Language language, string text)
+        public LocalizedText(Language language, string text, PhraseType phraseType)
         {
             Language = language;
             Text = text;
+            PhraseType = phraseType;
         }
 
-        //method
-        //public string GetString()
-        //{
-        //    string textValue = "myText";
-        //    return textValue;
-        //}
+        //property definition 
+        public Language Language { get; }
+
+        public string Text { get; }
+
+        public PhraseType PhraseType { get; }
 
         //переопределение метода
         public override string ToString()
