@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Common\Language.cs" />
     <Compile Include="Models\LocalizedText.cs" />
+    <Compile Include="Models\PhraseType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
