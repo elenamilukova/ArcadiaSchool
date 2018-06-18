@@ -93,16 +93,28 @@ namespace Btl.Surpass.AutomationTesting
         // this behavior should be aggregated
         private static int PrintLanguagesAndGetUserChoise(IReadOnlyCollection<Language> uniqLanguages)
         {
-            Console.WriteLine("Available languages:");
-
-            foreach (var language in uniqLanguages)
+            while (true)
             {
-                Console.WriteLine($"{(int)language} - {language}");
-            }
+                Console.WriteLine("Available languages:");
 
-            Console.WriteLine("\nChoose language:");
-            var userInputLang = int.Parse(GetKeyAndreturnCarriage());
-            return userInputLang;
+                foreach (var language in uniqLanguages)
+                {
+                    Console.WriteLine($"{(int)language} - {language}");
+                }
+
+                Console.WriteLine("\nChoose language:");
+
+                try
+                {
+                    var userInputLang = int.Parse(GetKeyAndreturnCarriage());
+                    return userInputLang;
+                }
+                catch (FormatException exception)
+                {
+                    Console.WriteLine(exception.Message);
+                }
+                Console.WriteLine();
+            }
         }
 
         private static int PrintPhrasesAndGetUserChoise(IReadOnlyCollection<LocalizedText> phrasesInSourceLanguage)
